@@ -1,0 +1,861 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Perfect Massage Therapy | Registered Massage Therapist in Winnipeg</title>
+  <meta name="description" content="Perfect Massage Therapy by Jaskaran Kaur Dhillon (RMT) in Winnipeg. Therapeutic massage, relaxation, and TMJ pain support. Direct billing available for most insurance providers." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Social previews -->
+  <meta property="og:title" content="Perfect Massage Therapy | Registered Massage Therapist in Winnipeg" />
+  <meta property="og:description" content="Therapeutic massage, relaxation, and TMJ pain support. Book by call/text or send an inquiry." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_CA" />
+
+  <link rel="icon" href="logo.png" />
+
+  <!-- Brand palette pulled from your logo -->
+  <style>
+    :root{
+      --bg-1:#F7FAFA;           /* soft clinic white */
+      --bg-2:#FFFFFF;           /* white */
+      --text:#475569;           /* slate text */
+      --heading:#1F3F44;        /* deep navy-teal */
+      --primary:#2F6F73;        /* deep teal */
+      --primary-2:#5FA6A3;      /* soft jade */
+      --accent:#8B7FAF;         /* muted lavender */
+      --gold:#D6C39A;           /* soft gold */
+      --border:#E3EFEF;         /* gentle border */
+      --shadow: 0 10px 30px rgba(31,63,68,.10);
+      --shadow2: 0 6px 18px rgba(31,63,68,.08);
+      --radius: 18px;
+      --radius2: 26px;
+      --max: 1120px;
+      --focus: 0 0 0 4px rgba(95,166,163,.25);
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:var(--font);
+      color:var(--text);
+      background: linear-gradient(to bottom, var(--bg-1), var(--bg-2));
+    }
+    a{color:inherit}
+    .container{max-width:var(--max); margin:0 auto; padding:0 18px}
+    .topbar{
+      background: linear-gradient(90deg, var(--heading), var(--primary));
+      color:#fff;
+      font-size:14px;
+    }
+    .topbar .row{
+      display:flex; flex-wrap:wrap; gap:10px;
+      align-items:center; justify-content:space-between;
+      padding:10px 0;
+    }
+    .pill{
+      display:inline-flex; gap:8px; align-items:center;
+      background: rgba(255,255,255,.12);
+      border:1px solid rgba(255,255,255,.18);
+      padding:7px 12px; border-radius:999px;
+    }
+    .dot{width:10px;height:10px;border-radius:999px;background:#35d399; display:inline-block}
+    .link{color:#fff; text-decoration:underline; text-underline-offset:3px; opacity:.95}
+    .link:hover{opacity:1}
+
+    header{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,.75);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0;
+      gap:12px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px; text-decoration:none;
+    }
+    .logo-wrap{
+      width:44px; height:44px; border-radius:14px; overflow:hidden;
+      background:#fff; border:1px solid var(--border);
+      box-shadow: var(--shadow2);
+      display:grid; place-items:center;
+    }
+    .logo-wrap img{width:100%; height:100%; object-fit:contain}
+    .brand .title{font-weight:700; color:var(--heading); line-height:1.05}
+    .brand .sub{font-size:12px; color: #5b6b73; margin-top:2px}
+    nav .menu{
+      display:none;
+      gap:18px; align-items:center;
+      font-size:14px;
+    }
+    nav .menu a{ text-decoration:none; color:#3f5560 }
+    nav .menu a:hover{ color:var(--heading) }
+    .actions{display:flex; gap:10px; align-items:center}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:8px;
+      padding:10px 14px;
+      border-radius:14px;
+      font-weight:600;
+      font-size:14px;
+      text-decoration:none;
+      border:1px solid transparent;
+      cursor:pointer;
+      transition: transform .08s ease, background .12s ease, border-color .12s ease, opacity .12s ease;
+      user-select:none;
+      white-space:nowrap;
+    }
+    .btn:active{transform: translateY(1px)}
+    .btn-primary{
+      background: var(--primary);
+      color:#fff;
+      box-shadow: var(--shadow2);
+    }
+    .btn-primary:hover{background: var(--heading)}
+    .btn-secondary{
+      background:#fff;
+      border-color: rgba(95,166,163,.55);
+      color: var(--primary);
+    }
+    .btn-secondary:hover{background: rgba(95,166,163,.10)}
+    .btn-ghost{
+      background: transparent;
+      border-color: rgba(31,63,68,.15);
+      color: var(--heading);
+    }
+    .btn-ghost:hover{background: rgba(31,63,68,.05)}
+
+    .section{padding:54px 0}
+    .hero{padding:38px 0 34px}
+    .grid{display:grid; gap:22px}
+    .grid-2{grid-template-columns: 1fr}
+    .grid-3{grid-template-columns: 1fr}
+    .card{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius: var(--radius2);
+      padding:22px;
+      box-shadow: var(--shadow2);
+    }
+    .soft{
+      background: rgba(95,166,163,.08);
+      border-color: rgba(95,166,163,.22);
+      box-shadow:none;
+    }
+    .eyebrow{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:8px 14px;
+      border-radius:999px;
+      background: rgba(31,63,68,.06);
+      border:1px solid rgba(31,63,68,.10);
+      color:#38555c;
+      font-size:14px;
+      width: fit-content;
+    }
+    .h1{
+      margin:14px 0 0;
+      font-size: 40px;
+      line-height:1.08;
+      color: var(--heading);
+      letter-spacing: -0.02em;
+      font-weight: 800;
+    }
+    .lead{
+      margin:14px 0 0;
+      font-size: 18px;
+      line-height:1.55;
+      color:#3f5560;
+    }
+    .badge-row{margin-top:18px; display:grid; gap:12px; grid-template-columns:1fr}
+    .badge{
+      border-radius: var(--radius);
+      border:1px solid var(--border);
+      background:#fff;
+      padding:14px;
+      display:flex; flex-direction:column; gap:6px;
+    }
+    .badge .k{font-size:12px; color:#60727c}
+    .badge .v{font-weight:700; color:var(--heading)}
+    .muted{color:#6a7b84}
+    .accent{color:var(--accent); font-weight:700}
+    .gold{color:var(--gold); font-weight:700}
+    .divider{border-top:1px solid var(--border)}
+    .pricing{
+      display:grid; gap:14px; margin-top:18px;
+    }
+    .price-row{
+      display:flex; justify-content:space-between; gap:12px; align-items:center;
+      padding:14px;
+      border-radius: var(--radius);
+      background: rgba(95,166,163,.08);
+      border:1px solid rgba(95,166,163,.18);
+    }
+    .price-row .name{font-weight:700; color:var(--heading)}
+    .price-row .desc{font-size:13px; color:#4c626d}
+    .price{font-weight:800; color:var(--heading)}
+    .kicker{
+      font-size:13px;
+      color:#6b7e88;
+      margin-top:10px;
+    }
+    .title2{
+      font-size:28px;
+      color:var(--heading);
+      font-weight:800;
+      letter-spacing:-0.01em;
+      margin:0;
+    }
+    .p{margin:10px 0 0; line-height:1.6}
+    .services{margin-top:18px}
+    .service{
+      padding:20px;
+      border-radius: var(--radius2);
+      border:1px solid var(--border);
+      background:#fff;
+      box-shadow: var(--shadow2);
+    }
+    .service h3{margin:12px 0 0; font-size:18px; color:var(--heading)}
+    .service p{margin:10px 0 0; line-height:1.6}
+    .icon{
+      width:42px; height:42px; border-radius:16px;
+      background: linear-gradient(180deg, rgba(47,111,115,.12), rgba(95,166,163,.10));
+      border:1px solid rgba(47,111,115,.22);
+      display:grid; place-items:center;
+      color: var(--primary);
+      font-weight:900;
+    }
+    .list{margin:12px 0 0; padding-left:18px; color:#425861}
+    .list li{margin:6px 0}
+    .policy-grid{margin-top:16px}
+    .notice{
+      border-radius: var(--radius2);
+      border:1px solid rgba(214,195,154,.45);
+      background: rgba(214,195,154,.14);
+      padding:16px;
+      color:#3f5560;
+    }
+
+    form{display:grid; gap:14px}
+    label{font-size:13px; font-weight:700; color:#334a53}
+    input, select, textarea{
+      width:100%;
+      padding:12px 12px;
+      border-radius:14px;
+      border:1px solid rgba(31,63,68,.18);
+      background:#fff;
+      font: inherit;
+      color:#23343a;
+      outline:none;
+      transition: box-shadow .12s ease, border-color .12s ease;
+    }
+    input:focus, select:focus, textarea:focus{
+      border-color: rgba(95,166,163,.8);
+      box-shadow: var(--focus);
+    }
+    textarea{min-height:110px; resize:vertical}
+    .row2{display:grid; gap:12px; grid-template-columns: 1fr}
+    .small{font-size:12px; color:#6a7b84; line-height:1.5}
+    .checkbox{display:flex; gap:10px; align-items:flex-start}
+    .checkbox input{width:auto; margin-top:4px}
+    .footer{
+      padding:26px 0;
+      border-top:1px solid var(--border);
+      background:#fff;
+    }
+    .footer .row{display:flex; flex-direction:column; gap:12px}
+    .footer .links{display:flex; flex-wrap:wrap; gap:14px}
+    .footer a{color:#3f5560; text-decoration:none}
+    .footer a:hover{color:var(--heading); text-decoration:underline; text-underline-offset:3px}
+
+    .gbtn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:8px;
+      padding:10px 14px;
+      border-radius:14px;
+      font-weight:700;
+      font-size:14px;
+      text-decoration:none;
+      border:1px solid rgba(31,63,68,.16);
+      background:#fff;
+      color: var(--heading);
+    }
+    .gbtn:hover{background: rgba(31,63,68,.05)}
+
+    /* responsive */
+    @media (min-width: 860px){
+      nav .menu{display:flex}
+      .grid-2{grid-template-columns: 1.15fr .85fr}
+      .grid-3{grid-template-columns: repeat(3, 1fr)}
+      .badge-row{grid-template-columns: repeat(3, 1fr)}
+      .row2{grid-template-columns: 1fr 1fr}
+      .footer .row{flex-direction:row; align-items:flex-start; justify-content:space-between}
+    }
+    @media (max-width: 859px){
+      .h1{font-size: 34px}
+    }
+  </style>
+
+  <!-- LocalBusiness schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Perfect Massage Therapy by Jaskaran Kaur Dhillon",
+    "description": "Registered Massage Therapist (RMT) in Winnipeg offering therapeutic massage, relaxation massage, and TMJ pain support (advanced training). Direct billing available for most insurance providers.",
+    "areaServed": "Winnipeg, MB",
+    "url": "https://YOUR-DOMAIN-HERE.com",
+    "telephone": "+1-431-557-7835",
+    "email": "rmtjazzdhillon@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Unit A, 2810 Pembina Highway",
+      "addressLocality": "Winnipeg",
+      "addressRegion": "MB",
+      "postalCode": "R3T 2H8",
+      "addressCountry": "CA"
+    },
+    "priceRange": "$$",
+    "sameAs": [
+      "https://share.google/drLyVQzEtkMMrWHpI"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container">
+      <div class="row">
+        <div class="pill">
+          <span class="dot"></span>
+          <span>Accepting new clients</span>
+        </div>
+        <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:center; justify-content:flex-end;">
+          <a class="link" href="#inquiry">Send inquiry</a>
+          <span style="opacity:.7;">|</span>
+          <a class="link" href="tel:+14315577835">Call/Text: (431) 557-7835</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="#top" aria-label="Perfect Massage Therapy home">
+          <span class="logo-wrap"><img src="logo.png" alt="Perfect Massage Therapy logo"></span>
+          <span>
+            <div class="title">Perfect Massage Therapy</div>
+            <div class="sub">by Jaskaran Kaur Dhillon • Registered Massage Therapist</div>
+          </span>
+        </a>
+
+        <nav>
+          <div class="menu" aria-label="Site navigation">
+            <a href="#services">Services</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#policies">Policies</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+
+        <div class="actions">
+          <a class="gbtn" href="https://share.google/drLyVQzEtkMMrWHpI" target="_blank" rel="noopener">Google Reviews & Directions</a>
+          <a class="btn btn-primary" href="tel:+14315577835">Call/Text to book</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="card soft" style="padding:16px 18px; margin-bottom:18px;">
+          <div style="display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between;">
+            <div class="muted"><strong style="color:var(--heading);">Clinic:</strong> Unit A, 2810 Pembina Highway, Winnipeg, MB <strong style="color:var(--heading);">R3T 2H8</strong></div>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <a class="btn btn-primary" href="tel:+14315577835">Call/Text (431) 557-7835</a>
+              <a class="btn btn-secondary" href="#inquiry">Send inquiry</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-2">
+          <div>
+            <div class="eyebrow"><span class="dot" style="background:var(--primary-2)"></span> Registered Massage Therapist (RMT) • Winnipeg</div>
+            <h1 class="h1">Relief that feels professional, safe, and personalized.</h1>
+            <p class="lead">
+              Therapeutic massage for neck/shoulders, back pain, stress, and muscle tension — plus jaw/TMJ pain support.
+              <span class="accent">Advanced training in TMJ pain management.</span>
+            </p>
+
+            <div style="margin-top:18px; display:flex; gap:10px; flex-wrap:wrap;">
+              <a class="btn btn-primary" href="tel:+14315577835">Call/Text to book</a>
+              <a class="btn btn-secondary" href="#inquiry">Send inquiry</a>
+            </div>
+
+            <div class="badge-row">
+              <div class="badge">
+                <div class="k">Insurance</div>
+                <div class="v">Direct billing (most providers)</div>
+              </div>
+              <div class="badge">
+                <div class="k">Clinic style</div>
+                <div class="v">Therapeutic + Relaxation</div>
+              </div>
+              <div class="badge">
+                <div class="k">TMJ</div>
+                <div class="v">Jaw pain support</div>
+              </div>
+            </div>
+
+            <p class="kicker">
+              *Massage therapy supports wellness and may help reduce pain/tension. It does not replace medical care.
+            </p>
+          </div>
+
+          <div class="card">
+            <h2 class="title2" style="margin-bottom:10px;">Session options</h2>
+            <div class="pricing">
+              <div class="price-row">
+                <div>
+                  <div class="name">60 min Massage</div>
+                  <div class="desc">Therapeutic / Relaxation</div>
+                </div>
+                <div class="price">$99.75</div>
+              </div>
+              <div class="price-row">
+                <div>
+                  <div class="name">90 min Massage</div>
+                  <div class="desc">More time + more areas</div>
+                </div>
+                <div class="price">$145</div>
+              </div>
+              <div class="price-row">
+                <div>
+                  <div class="name">120 min Massage</div>
+                  <div class="desc">Full body + focused work</div>
+                </div>
+                <div class="price">$199.50</div>
+              </div>
+            </div>
+
+            <div class="notice" style="margin-top:14px;">
+              <strong>Direct billing:</strong> available for most insurance providers (coverage depends on your plan).
+            </div>
+
+            <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+              <a class="btn btn-primary" href="#inquiry">Send inquiry</a>
+              <a class="btn btn-ghost" href="https://share.google/drLyVQzEtkMMrWHpI" target="_blank" rel="noopener">View on Google</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="title2">Services</h2>
+        <p class="p">Choose a style that matches your goals. Not sure? I’ll guide you during intake.</p>
+
+        <div class="services grid grid-3">
+          <div class="service">
+            <div class="icon">1</div>
+            <h3>Therapeutic Massage</h3>
+            <p>For neck/shoulders, back pain, hip tightness, and muscle tension. Techniques are adapted to your comfort.</p>
+            <ul class="list">
+              <li>Targeted work + mobility support</li>
+              <li>Pressure adjusted to your tolerance</li>
+              <li>Professional draping and consent-first care</li>
+            </ul>
+          </div>
+
+          <div class="service">
+            <div class="icon">2</div>
+            <h3>Relaxation Massage</h3>
+            <p>A calm, full-body session to reduce stress, improve sleep, and ease general tension.</p>
+            <ul class="list">
+              <li>Slow, flowing techniques</li>
+              <li>Nervous system calming</li>
+              <li>Great for first-time clients</li>
+            </ul>
+          </div>
+
+          <div class="service">
+            <div class="icon">3</div>
+            <h3>TMJ Pain Support</h3>
+            <p>Support for jaw tension and related headache patterns. Always consent-based and within scope.</p>
+            <div class="notice" style="margin-top:12px; border-color: rgba(139,127,175,.35); background: rgba(139,127,175,.10);">
+              <div><strong class="accent">Advanced training in TMJ pain management</strong></div>
+              <div class="small" style="margin-top:6px;">Focus may include jaw, neck, upper back, and posture support.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section" style="background:#fff; border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+      <div class="container">
+        <h2 class="title2">Pricing</h2>
+        <p class="p">Transparent rates. Receipts provided for insurance claims.</p>
+
+        <div class="grid grid-3" style="margin-top:18px;">
+          <div class="card">
+            <div class="muted">60 minutes</div>
+            <div style="font-size:32px; font-weight:900; color:var(--heading); margin-top:8px;">$99.75</div>
+            <div class="small" style="margin-top:10px;">Great for therapeutic or relaxation.</div>
+          </div>
+          <div class="card">
+            <div class="muted">90 minutes</div>
+            <div style="font-size:32px; font-weight:900; color:var(--heading); margin-top:8px;">$145</div>
+            <div class="small" style="margin-top:10px;">More time + more areas.</div>
+          </div>
+          <div class="card">
+            <div class="muted">120 minutes</div>
+            <div style="font-size:32px; font-weight:900; color:var(--heading); margin-top:8px;">$199.50</div>
+            <div class="small" style="margin-top:10px;">Full body + focused work.</div>
+          </div>
+        </div>
+
+        <div class="grid grid-2" style="margin-top:18px;">
+          <div class="card soft">
+            <strong style="color:var(--heading);">Direct billing</strong>
+            <p class="p">Available for most insurance providers (coverage depends on your plan).</p>
+          </div>
+          <div class="card soft">
+            <strong style="color:var(--heading);">Payments</strong>
+            <p class="p">Cash, e-Transfer, and card payments may be available (varies by location/setup). No card details are collected on this website.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Policies -->
+    <section id="policies" class="section">
+      <div class="container">
+        <h2 class="title2">Booking policies</h2>
+        <p class="p">Clear confirmation rules to protect your time and mine.</p>
+
+        <div class="policy-grid grid grid-3">
+          <div class="card">
+            <strong style="color:var(--heading);">Direct billing confirmation</strong>
+            <p class="p"><strong>Insurance details are required</strong> to confirm appointments requested for direct billing.</p>
+          </div>
+          <div class="card">
+            <strong style="color:var(--heading);">Without insurance</strong>
+            <p class="p">Appointments requested <strong>without insurance information</strong> require a <strong>50% deposit</strong> to confirm the booking.</p>
+          </div>
+          <div class="card">
+            <strong style="color:var(--heading);">No insurance + no deposit</strong>
+            <p class="p">If no insurance details or deposit are provided, availability must be <strong>reconfirmed at least 1 hour prior to arrival</strong>.</p>
+          </div>
+        </div>
+
+        <div class="notice" style="margin-top:16px;">
+          Deposit payments (if needed) are arranged after availability is confirmed. No card details are collected on this website.
+        </div>
+      </div>
+    </section>
+
+    <!-- Inquiry -->
+    <section id="inquiry" class="section" style="background:#fff; border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+      <div class="container">
+        <div class="grid grid-2">
+          <div>
+            <h2 class="title2">Send an inquiry / request a slot</h2>
+            <p class="p">Appointments are booked by <strong>call, text, or inquiry form</strong>. Include your preferred date/time and session length.</p>
+
+            <div class="card soft" style="margin-top:14px;">
+              <strong style="color:var(--heading);">Contact</strong>
+              <p class="p" style="margin-top:8px;">
+                Phone/Text: <a href="tel:+14315577835" style="color:var(--primary); font-weight:800; text-decoration:none;">(431) 557-7835</a><br/>
+                Email: <a href="mailto:rmtjazzdhillon@gmail.com" style="color:var(--primary); font-weight:800; text-decoration:none;">rmtjazzdhillon@gmail.com</a>
+              </p>
+              <p class="small"><strong>Direct billing</strong> is available for most insurance providers (coverage depends on your plan).</p>
+            </div>
+
+            <div class="card" style="margin-top:14px;">
+              <strong style="color:var(--heading);">Important notice</strong>
+              <p class="p">Submitting this form does not automatically confirm an appointment. Appointments are confirmed after availability is reviewed.</p>
+              <ul class="list">
+                <li>If requesting <strong>direct billing</strong>, insurance details are required to confirm the appointment.</li>
+                <li>Without insurance info, a <strong>50% deposit</strong> is required to confirm the booking.</li>
+                <li>Without insurance or deposit, availability must be reconfirmed <strong>1 hour before arrival</strong>.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <form id="inquiryForm" action="https://formspree.io/f/xykjjrop" method="post">
+              <input type="hidden" name="_subject" value="New inquiry — Perfect Massage Therapy" />
+
+              <div>
+                <label for="fullName">Full name</label>
+                <input id="fullName" name="fullName" required placeholder="Your name" />
+              </div>
+
+              <div class="row2">
+                <div>
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" required placeholder="(431) 557-7835" />
+                </div>
+                <div>
+                  <label for="email">Email (optional)</label>
+                  <input id="email" name="email" type="email" placeholder="you@email.com" />
+                </div>
+              </div>
+
+              <div class="row2">
+                <div>
+                  <label for="sessionLength">Session length</label>
+                  <select id="sessionLength" name="sessionLength">
+                    <option selected>60 min ($99.75)</option>
+                    <option>90 min ($145)</option>
+                    <option>120 min ($199.50)</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="focus">Main concern (optional)</label>
+                  <input id="focus" name="focus" placeholder="Neck/back pain, stress, TMJ/jaw tension, etc." />
+                </div>
+              </div>
+
+              <div class="row2">
+                <div>
+                  <label for="preferredDate">Preferred date (optional)</label>
+                  <input id="preferredDate" name="preferredDate" type="date" />
+                </div>
+                <div>
+                  <label for="preferredTime">Preferred time (optional)</label>
+                  <input id="preferredTime" name="preferredTime" type="time" />
+                </div>
+              </div>
+
+              <div>
+                <label for="confirmMethod">How would you like to confirm your appointment?</label>
+                <select id="confirmMethod" name="confirmMethod">
+                  <option value="direct_billing" selected>Insurance (Direct Billing)</option>
+                  <option value="deposit">50% Deposit (Self-pay)</option>
+                  <option value="reconfirm">Reconfirm 1 hour before arrival (not guaranteed)</option>
+                </select>
+                <div id="confirmHint" class="small" style="margin-top:8px;"></div>
+              </div>
+
+              <div id="insuranceBlock" class="card soft" style="padding:14px; box-shadow:none;">
+                <strong style="color:var(--heading);">Insurance details <span class="gold">(required for direct billing)</span></strong>
+                <div class="row2" style="margin-top:10px;">
+                  <div>
+                    <label for="insurer">Insurance provider</label>
+                    <input id="insurer" name="insurer" placeholder="e.g., Canada Life, Blue Cross" />
+                  </div>
+                  <div>
+                    <label for="memberId">Member ID / Certificate #</label>
+                    <input id="memberId" name="memberId" placeholder="Member/Certificate #" />
+                  </div>
+                </div>
+                <div class="row2" style="margin-top:10px;">
+                  <div>
+                    <label for="policy">Policy # (optional)</label>
+                    <input id="policy" name="policy" placeholder="Policy #" />
+                  </div>
+                  <div>
+                    <label for="dob">DOB (optional)</label>
+                    <input id="dob" name="dob" type="date" />
+                  </div>
+                </div>
+                <div class="small" style="margin-top:8px;">Direct billing is available for most providers. Coverage depends on your plan.</div>
+              </div>
+
+              <div id="depositNote" class="notice" style="display:none;">
+                <strong>Deposit required</strong>
+                <div class="small" style="margin-top:6px;">A <strong>50% deposit</strong> is required to confirm bookings requested without insurance information. Payment instructions are provided after availability is confirmed.</div>
+              </div>
+
+              <div id="reconfirmNote" class="notice" style="display:none; border-color: rgba(31,63,68,.18); background: rgba(31,63,68,.05);">
+                <strong>Reconfirm 1 hour before</strong>
+                <div class="small" style="margin-top:6px;">If no insurance details or deposit are provided, availability is <strong>not guaranteed</strong> and must be reconfirmed at least <strong>1 hour prior to arrival</strong>.</div>
+              </div>
+
+              <div>
+                <label for="message">Your message / question</label>
+                <textarea id="message" name="message" required placeholder="Tell me what you need and your preferred times."></textarea>
+              </div>
+
+              <div class="checkbox">
+                <input id="consent" name="consent" type="checkbox" required />
+                <label for="consent" style="font-weight:600; color:#3f5560;">
+                  I consent to being contacted by phone/text/email to confirm availability and booking details.
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%;">Send inquiry</button>
+
+              <div class="small">Your inquiry is sent securely via Formspree. No card details are collected on this website.</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="grid grid-2">
+          <div>
+            <h2 class="title2">About</h2>
+            <p class="p">Hi, I’m <strong style="color:var(--heading);">Jaskaran Kaur Dhillon</strong>, a Registered Massage Therapist (RMT) in Winnipeg. My approach is professional, respectful, and personalized — focused on helping you feel better while staying within your comfort.</p>
+            <p class="p">I provide therapeutic and relaxation massage, and I also offer TMJ pain support with <strong class="accent">advanced training in TMJ pain management</strong>. Sessions begin with a short intake so we understand your goals and preferences.</p>
+          </div>
+
+          <div class="card soft">
+            <strong style="color:var(--heading);">Clinic</strong>
+            <p class="p">Unit A, 2810 Pembina Highway<br/>Winnipeg, MB <strong style="color:var(--heading);">R3T 2H8</strong></p>
+
+            <div class="notice" style="margin-top:12px; border-color: rgba(95,166,163,.25); background: rgba(95,166,163,.10);">
+              <strong>Direct billing</strong>
+              <div class="small" style="margin-top:6px;">Available for most insurance providers (coverage depends on your plan).</div>
+            </div>
+
+            <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+              <a class="btn btn-secondary" href="#inquiry">Send inquiry</a>
+              <a class="btn btn-ghost" href="https://share.google/drLyVQzEtkMMrWHpI" target="_blank" rel="noopener">Google Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section" style="background:#fff; border-top:1px solid var(--border);">
+      <div class="container">
+        <div class="grid grid-2">
+          <div>
+            <h2 class="title2">Contact</h2>
+            <p class="p">For questions, booking help, or availability checks.</p>
+
+            <div class="grid" style="margin-top:16px;">
+              <div class="card">
+                <div class="muted">Phone / Text</div>
+                <div style="margin-top:6px; font-weight:900; color:var(--heading); font-size:18px;">
+                  <a href="tel:+14315577835" style="text-decoration:none; color:var(--heading);">(431) 557-7835</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="muted">Email</div>
+                <div style="margin-top:6px; font-weight:900; color:var(--heading); font-size:18px;">
+                  <a href="mailto:rmtjazzdhillon@gmail.com" style="text-decoration:none; color:var(--heading);">rmtjazzdhillon@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="muted">Clinic address</div>
+                <div style="margin-top:6px; font-weight:800; color:var(--heading);">Unit A, 2810 Pembina Highway</div>
+                <div class="muted" style="margin-top:4px;">Winnipeg, MB • <strong style="color:var(--heading);">R3T 2H8</strong></div>
+
+                <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+                  <a class="btn btn-primary" href="#inquiry">Send inquiry</a>
+                  <a class="gbtn" href="https://share.google/drLyVQzEtkMMrWHpI" target="_blank" rel="noopener">Google Reviews & Directions</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card soft">
+            <strong style="color:var(--heading);">Map (optional)</strong>
+            <p class="p">If you want, paste your Google Maps “Embed a map” iframe here later.</p>
+            <div class="card" style="margin-top:12px; box-shadow:none;">
+              <div class="small">Google Maps embed placeholder</div>
+            </div>
+            <p class="small" style="margin-top:10px;">Tip: Google Maps → Share → Embed a map → copy iframe.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div>
+            <div style="display:flex; align-items:center; gap:12px;">
+              <span class="logo-wrap" style="width:40px;height:40px;"><img src="logo.png" alt="Logo"></span>
+              <div>
+                <div style="font-weight:900; color:var(--heading);">Perfect Massage Therapy</div>
+                <div class="small">Registered Massage Therapist • <span class="accent">Advanced training in TMJ pain management</span></div>
+              </div>
+            </div>
+            <div class="small" style="margin-top:10px;">
+              Unit A, 2810 Pembina Highway, Winnipeg, MB (R3T 2H8) • © <span id="year"></span>
+            </div>
+          </div>
+          <div class="links">
+            <a href="#services">Services</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#policies">Policies</a>
+            <a href="#inquiry">Inquiry</a>
+            <a href="https://share.google/drLyVQzEtkMMrWHpI" target="_blank" rel="noopener">Google Business Profile</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Conditional insurance requirements + notes
+    const confirmMethod = document.getElementById('confirmMethod');
+    const insurer = document.getElementById('insurer');
+    const memberId = document.getElementById('memberId');
+    const insuranceBlock = document.getElementById('insuranceBlock');
+    const depositNote = document.getElementById('depositNote');
+    const reconfirmNote = document.getElementById('reconfirmNote');
+    const confirmHint = document.getElementById('confirmHint');
+
+    function setRequired(on){
+      insurer.required = on;
+      memberId.required = on;
+      insuranceBlock.style.opacity = on ? '1' : '.75';
+    }
+
+    function updateUI(){
+      const v = confirmMethod.value;
+
+      depositNote.style.display = 'none';
+      reconfirmNote.style.display = 'none';
+
+      if(v === 'direct_billing'){
+        setRequired(true);
+        confirmHint.textContent = 'Direct billing: insurance provider + member/certificate number are required to confirm the appointment.';
+      }else if(v === 'deposit'){
+        setRequired(false);
+        depositNote.style.display = 'block';
+        confirmHint.textContent = 'Self-pay: a 50% deposit is required to confirm bookings requested without insurance information (arranged after availability is confirmed).';
+      }else{
+        setRequired(false);
+        reconfirmNote.style.display = 'block';
+        confirmHint.textContent = 'Not guaranteed: please reconfirm availability at least 1 hour prior to arrival.';
+      }
+    }
+
+    confirmMethod.addEventListener('change', updateUI);
+    updateUI();
+  </script>
+</body>
+</html>
